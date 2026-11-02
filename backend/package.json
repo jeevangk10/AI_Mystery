@@ -1,0 +1,27 @@
+{
+  "name": "@ai-mystery-room/backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "build": "node scripts/check-source.js",
+    "test": "node --test",
+    "test:integration": "node scripts/verify-mongo.js",
+    "test:integration:generation": "node scripts/verify-generation.js"
+  },
+  "dependencies": {
+    "@google/genai": "2.32.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.7.2",
+    "helmet": "^8.1.0",
+    "mongoose": "^8.24.7",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.4"
+  }
+}
